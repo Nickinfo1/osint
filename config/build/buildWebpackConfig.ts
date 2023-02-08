@@ -18,7 +18,7 @@ return {
 		module: {
   		rules: buildLoaders(options),
   	},
-  	resolve: buildResolves(),
+  	resolve: buildResolves(options),
 		devtool: isDev ? 'inline-source-map' : undefined,
 		devServer: buildDevServer(options),
 		plugins: buildPlugins(options),
